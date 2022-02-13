@@ -1,24 +1,25 @@
 nav {
+  width: 100%;
   background-color: rgb(89, 158, 255);
   border-radius: 4px;
   padding: 10px;
   margin-bottom: 0px;
   display: flex;
   justify-content: space-around;
+  
 }
-nav a {
-  color: rgba(0,139, 139, 1);
-}
+
 
 
 /* Page styles */
   .header{
     width: 100%;
+    height: 40px;
     display: inline-block;
+    font-size: small;
     background-color: rgba(0,139, 139,0.8);
-    padding: 10px 15px;
+    padding: 10px 20px;
     margin: 0;
-    margin-bottom: 0px;
   }
   .logoZone{
     width: 100%;
@@ -39,10 +40,13 @@ nav a {
   }
 .grid {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     width: 250px;
 }
-.footerSide {
+footer{
+  width:100%;
+}
+footer footerSide {
     width: 25%;
     display: inline-flexbox;
     background-color: rgba(0,139, 139,0.8);
@@ -52,11 +56,8 @@ nav a {
     margin-right: 0px;
     margin-left: 0px;
   }
-.footerSide a {
-color: rgba(0,110, 110, 1);
-}
 
-.footerMiddle {
+.footer footerMiddle {
   width: 50%;
   display: inline-flex;
   background-color: rgba(184, 210, 247);
@@ -65,7 +66,4 @@ color: rgba(0,110, 110, 1);
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
-}
-.footerMiddle a {
-color: rgba(0,110, 110, 1);
 }
