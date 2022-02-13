@@ -46,7 +46,7 @@ nav {
 footer{
   width:100%;
 }
-footer footerSide {
+.footerSide {
     width: 25%;
     display: inline-flexbox;
     background-color: rgba(0,139, 139,0.8);
@@ -57,7 +57,7 @@ footer footerSide {
     margin-left: 0px;
   }
 
-.footer footerMiddle {
+.footerMiddle {
   width: 50%;
   display: inline-flex;
   background-color: rgba(184, 210, 247);
