@@ -1,5 +1,7 @@
+
 nav {
   width: 100%;
+  height: 50px;
   background-color: rgb(89, 158, 255);
   border-radius: 4px;
   padding: 10px;
@@ -40,12 +42,10 @@ nav {
   }
 .grid {
     display: flex;
-    justify-content: space-between;
-    width: 250px;
+    justify-content: center;
+   
 }
-footer{
-  width:100%;
-}
+
 .footerSide {
     width: 25%;
     display: inline-flexbox;
