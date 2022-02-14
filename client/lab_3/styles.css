@@ -41,9 +41,8 @@
   height: 300px;
   display: flex;
   justify-content: space-between;
-  align-items: stretch; 
+  align-items: center;
 }
-
 
 .photo-grid-container {
   display: flex;
