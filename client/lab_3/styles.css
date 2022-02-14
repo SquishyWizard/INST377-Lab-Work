@@ -41,8 +41,9 @@
   height: 300px;
   display: flex;
   justify-content: space-between;
-  align-items: ; 
+  align-items: stretch; 
 }
+
 
 .photo-grid-container {
   display: flex;
@@ -54,7 +55,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  flex-direction: row-reverse;  /* <--- Really freaking cool! */
+  flex-direction: row;  
   align-items: center;
 }
 .photo-grid-item {
@@ -99,6 +100,3 @@
   width: 300px;
 }
 
-.signup {
-  margin-left: auto;
-}
