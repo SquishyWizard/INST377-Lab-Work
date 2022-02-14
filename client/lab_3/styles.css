@@ -41,13 +41,7 @@
   height: 300px;
   display: flex;
   justify-content: space-between;
-  align-items: stretch; 
-}
-
-.social,
-.logo,
-.subscribe {
-  border: 1px solid #5995DA;
+  align-items: ; 
 }
 
 .photo-grid-container {
@@ -60,7 +54,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  flex-direction: row;  /* <--- Really freaking cool! */
+  flex-direction: row-reverse;  /* <--- Really freaking cool! */
   align-items: center;
 }
 .photo-grid-item {
