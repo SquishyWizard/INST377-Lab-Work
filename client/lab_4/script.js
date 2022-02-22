@@ -9,7 +9,30 @@ document.
   });
 
 document.
-  getElementById('carousel_button--next')
+  getElementById('carousel_button--prev')
   .addEventListener("click", function() {
     moveToPrevSlide();
   });
+
+  function updateSlidePosition(){
+      for (let slide of slides) {
+          console.log(slide)
+      }
+  }
+  
+  function moveToNextSlide() {
+    updateSlidePosition();
+
+    if (slidePosition == totalSlides){
+        slidePosition = 0;
+    } else{
+        slidePosition++;
+    }
+}
+  function moveToPrevSlide() {
+    if (slidePosition == 0){
+        slidePosition = 0;
+    } else{
+        slidePosition--;
+    }
+  }
