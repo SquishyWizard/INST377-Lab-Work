@@ -11,5 +11,5 @@ document.
 document.
   getElementById('carousel_button--next')
   .addEventListener("click", function() {
-      updateSlidePosition(moveToNextSlide);
+    moveToPrevSlide();
   });
