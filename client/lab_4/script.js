@@ -33,7 +33,7 @@ document.
 }
   function moveToPrevSlide() {
     if (slidePosition == 0){
-        slidePosition = 0;
+        slidePosition = totalSlides - 1;
     } else{
         slidePosition--;
     }
