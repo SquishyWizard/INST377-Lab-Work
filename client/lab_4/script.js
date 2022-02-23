@@ -24,13 +24,12 @@ document.
   }
   
   function moveToNextSlide() {
-    updateSlidePosition();
-
-    if (slidePosition == totalSlides){
+    if (slidePosition == totalSlides - 1){
         slidePosition = 0;
     } else{
         slidePosition++;
     }
+    
 }
   function moveToPrevSlide() {
     if (slidePosition == 0){
@@ -38,4 +37,5 @@ document.
     } else{
         slidePosition--;
     }
+    updateSlidePosition();
   }
