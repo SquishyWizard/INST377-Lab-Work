@@ -16,8 +16,11 @@ document.
 
   function updateSlidePosition(){
       for (let slide of slides) {
-          console.log(slide)
+          slide.classList.remove('carousel_item--visible');
+          slide.classList.add('carousel_item--hidden');
       }
+
+      slides[slidePosition].classList.add('carousel_item--visible')
   }
   
   function moveToNextSlide() {
