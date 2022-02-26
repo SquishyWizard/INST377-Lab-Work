@@ -25,7 +25,8 @@ body {
   max-width: 960px;
   margin-top: 25px;
 }
-.speaker-form-header {
+.selection-form-header {
+  width: 100%
   text-align: center;
   background-color: #F6F7F8;
   border: 1px solid #D6D9DC;
@@ -36,11 +37,11 @@ body {
   padding: 50px;
 }
 
-.speaker-form-header h1 {
+.selection-form-header h1 {
   font-size: 30px;
   margin-bottom: 20px;
 }
-.speaker-form {
+.selection-form {
   background-color: #F6F7F8;
   border: 1px solid #D6D9DC;
   border-radius: 3px;
@@ -59,7 +60,7 @@ body {
 }
 
 .form-row input[type='text'],
-.form-row input[type='email']  {
+.form-row input[type='text']  {
   background-color: #FFFFFF;
   border: 1px solid #D6D9DC;
   border-radius: 3px;
@@ -73,8 +74,8 @@ body {
 }
 
 @media only screen and (min-width: 700px) {
-  .speaker-form-header,
-  .speaker-form {
+  .selection-form-header,
+  .selection-form {
     width: 600px;
   }
   .form-row {
@@ -83,7 +84,7 @@ body {
     margin-bottom: 20px;
   }
   .form-row input[type='text'],
-  .form-row input[type='email'],   
+  .form-row input[type='text'],   
   .form-row select,                
   .form-row textarea  {
     width: 250px;
@@ -108,7 +109,7 @@ body {
   }
 }
 .form-row input[type='text']:invalid,
-.form-row input[type='email']:invalid {
+.form-row input[type='text']:invalid {
   border: 1px solid #D55C5F;
   color: #D55C5F;
   box-shadow: none; /* Remove default red glow in Firefox */
