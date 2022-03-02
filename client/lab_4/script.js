@@ -29,7 +29,7 @@ document.
     } else{
         slidePosition++;
     }
-    
+    updateSlidePosition();
 }
   function moveToPrevSlide() {
     if (slidePosition == 0){

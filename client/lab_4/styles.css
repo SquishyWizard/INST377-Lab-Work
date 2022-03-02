@@ -164,6 +164,6 @@
     }
     100% {
       opacity: 1;
-      transform: opacity;
+      transform: opacity linear;
     }
   }
