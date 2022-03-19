@@ -1,3 +1,8 @@
+const arr = [];
+for (let i = 0; i<1000; i++){
+  arr.push(element[i])
+}
+
 function dataHandler(dataArray){
   console.log('fired dataHandler');
   console.table(dataArray);
@@ -8,13 +13,10 @@ function dataHandler(dataArray){
   });
   console.log(listItems);
   return listItems;
-  // range.forEach((item) => {
-  //   console.log('range item', item)
-  // })
-
 }
 // As the last step of your lab, hook this up to index.html
 async function mainEvent() { // the async keyword means we can make API requests
+  console.log('script loaded');
   const form = document.querySelector('.main_form');
   form.addEventListener('submit', async (submitEvent) => { // async has to be declared all the way to get an await
     submitEvent.preventDefault(); // This prevents your page from refreshing!
