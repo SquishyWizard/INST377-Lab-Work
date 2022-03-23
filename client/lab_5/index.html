@@ -14,37 +14,41 @@
       <h1>Casie Thomas Lab 5</h1>
     </header>
 
-
-    <form method='get' class='selection-form'>
-        <div class='form-item'>
+    <div class = "row">
+      <div class = "column">
+        <form method='get' class='selection-form'>
+          <div class='form-item'>
             <label for='name'>Name</label>
             <input id='name' name='name' type='text'/>
-        </div>
-        <div class='form-item'>
+          </div>
+          <div class='form-item'>
             <label for='food'>Food Preference</label>
             <input id='food' name='food' type='text'/>
-        </div>
-        <fieldset class='legacy-form-row'>
+          </div>
+          <fieldset class='legacy-form-row'>
             <legend>Veggie or Vegan?</legend>
             <input id='vegYes'
-                   name='talk-type'
-                   type='radio'
-                   value='main-stage' />
+                  name='veg'
+                  type='radio'
+                  value='isVeg' />
             <label for='vegYes' class='radio-label'>Yes</label>
-            <input id='veggieOrVegan'
-                   name='vegYes'
-                   type='radio'
-                   value='workshop'
-                   checked />
+            <input id='vegNo'
+                  name='veg'
+                  type='radio'
+                  value='notVeg'
+                  checked />
             <label for='vegNo' class='radio-label'>No</label>
           </fieldset>  
-          <div class='form-item' type ="submit">
-            <button class = "button submit_button" type="submit">Submit</button>
-          </div> 
-    </form>
-    <div class = 'form-row'>
-      <h2>Resturant List</h2>
-      <ul id="resto-list"></ul>
+            <div class='form-item' type ="submit">
+              <button class = "button submit_button" type="submit">Submit</button>
+            </div> 
+        </form>
+      </div>
+      <div class = "column">
+        <div class = 'form-row'>
+          <h2>Resturant List</h2>
+        </div>
+      </div>
     </div>
     <script src='script.js'></script>
   </body>
