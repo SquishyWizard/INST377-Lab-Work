@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang='en'>
+
   <head>
     <meta charset='UTF-8'/>
-    <title>Casie Thomas Lab 5</title>
-    <link rel='stylesheet' href='styles.css' href='bulma.css'/>
+    <title>Casie Thomas Lab 6</title>
+    <link rel='stylesheet' href='styles.css'/>
   </head>
+
+
+
   <body>
     <header class='selection-form-header'>
       <h1>Casie Thomas Lab 5</h1>
     </header>
-    <form action='https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json' method='get' class='selection-form'>
-        <div class='form-row'>
+
+
+    <form method='get' class='selection-form'>
+        <div class='form-item'>
             <label for='name'>Name</label>
             <input id='name' name='name' type='text'/>
         </div>
-        <div class='form-row'>
+        <div class='form-item'>
             <label for='food'>Food Preference</label>
-            <input id='food'
-                   name='food'
-                   type='text'/>
+            <input id='food' name='food' type='text'/>
         </div>
-        <fieldset class='legacy-form-row'>
+        <fieldset class='form_row'>
             <legend>Veggie or Vegan?</legend>
             <input id='talk-type-1'
                    name='talk-type'
@@ -34,10 +38,14 @@
                    checked />
             <label for='talk-type-2' class='radio-label'>No</label>
           </fieldset>  
-          <div class='form-row'>
-            <button>Submit</button>
+          <div class='form-item' type ="submit">
+            <button class = "button submit_button" type="submit">Submit</button>
           </div> 
     </form>
-    <div style = "display: inline-block;"><hi>I BELING ON THE RIGHT</hi></div>
+    <div class = 'form-row'>
+      <h2>Resturant List</h2>
+      <ul id="resto-list"></ul>
+    </div>
+    <script src='script.js'></script>
   </body>
 </html>
