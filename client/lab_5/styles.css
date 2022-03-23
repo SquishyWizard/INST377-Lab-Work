@@ -1,21 +1,19 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  color: #4a4a4a;
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1.5;
   margin: 0;
   padding: 0;
-  font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’,
-    ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
-  background-color: darkslategray;
-  
+  color: #4a4a4a;
+  background-color: darkslategray; 
+  font-family:  ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’,
+  ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: flex;
+  align-items: center;
 }
 
 
@@ -24,18 +22,28 @@ body {
 .columns {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .wrapper {
   display: flex;
 }
+
 .container {
   max-width: 960px;
   margin-top: 25px;
-  justify-content: space-around;
-  display: flex;
 }
+
+.selection-form-header {
+  text-align: center;
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 25px; 
+  width: 80%;
+  margin: 40px 0;
+  padding: 50px;
+}
+
+
 .header{
   display: block;
   padding: 15px;
@@ -43,22 +51,13 @@ body {
   background-color: hsl(48, 100%, 67%);
 } 
 
-.h2{
-  display: block;
-  margin-block-start: 0.083em;
-  margin-block-end: 0.083em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-
-}
-
 .page_item {
   display: flex;
   flex-direction: column;
   padding: 15px;
   border-radius: 4px;
   background-color: #efefef;
-  height: fit-content;
+  align-self: center;
 }
 
 .form-item {
@@ -125,60 +124,41 @@ body {
     flex-direction: row;
     align-items: flex-start; /* To avoid stretching */
     margin-bottom: 20px;
+    border-radius: 25px;
+    width: 50%;
+    padding: 20px;
   }
-  .form-row input[type='text'],
-  .form-row input[type='text'],   
-  .form-row select,                
-  .form-row textarea  {
-    width: 250px;
-    height: initial;
-  }
+
   .form-row label {
     text-align: right;
     width: 120px;
     margin-top: 7px;
     padding-right: 20px;
   }
-  .legacy-form-row {
-    margin-bottom: 10px;
-  }
-  .legacy-form-row legend {
-    width: 120px;
-    text-align: right;
-    padding-right: 20px;
-  }
-  .legacy-form-row legend {
-    float: left;
-  }
-}
 
-}
-.form-row input[type='text']:invalid,
-.form-row input[type='text']:invalid {
-  border: 1px solid #D55C5F;
-  color: #D55C5F;
-  box-shadow: none; /* Remove default red glow in Firefox */
-}
 
 .legacy-form-row {
   border: none;
   margin-bottom: 40px;
+  margin-left: 20px;
 }
-
+.legacy-form-row legend {
+  float: left;
+}
 .legacy-form-row .radio-label {
   display: block;
   font-size: 14px;
   padding: 0 20px 0 10px;
 }
-
-
 .legacy-form-row input[type='radio'] {
   margin-top: 2px;
 }
+
 .legacy-form-row .radio-label,
 .legacy-form-row input[type='radio'] {
   float: left;
 }
+
 .form-row button {
   font-size: 16px;
   font-weight: bold;
@@ -189,7 +169,7 @@ body {
   border: none;
   border-radius: 3px;
 
-  padding: 10px 40px;
+  padding: 10px 25px;
   cursor: pointer;
 }
 
@@ -199,4 +179,5 @@ body {
 
 .form-row button:active {
   background-color: #407FC7;
+}
 }
