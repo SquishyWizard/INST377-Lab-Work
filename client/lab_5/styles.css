@@ -132,7 +132,7 @@ body {
 }
 
 .legacy-form-row legend {
-  float: left;
+  margin-bottom: 15px;
 }
 
 .legacy-form-row .radio-label {
