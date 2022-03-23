@@ -140,12 +140,17 @@ body {
     padding-right: 20px;
   }
   .legacy-form-row {
-    border: none;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
   .legacy-form-row legend {
-    margin-bottom: 15px;
+    width: 120px;
+    text-align: right;
+    padding-right: 20px;
   }
+  .legacy-form-row legend {
+    float: left;
+  }
+}
 
 }
 .form-row input[type='text']:invalid,
