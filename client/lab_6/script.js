@@ -3,11 +3,10 @@ function dataHandler(dataArray) {
   console.table(dataArray);
   const range = [...Array(15).keys()];
   const listItems = range.map((item, index) => {
-    const restNum = getRandomIntInclusive(0, dataArray.length - 1);
+    const restoPosition = getRandomIntInclusive(0, dataArray.length - 1)
     return dataArray[restNum];
   });
   console.log(listItems);
-  return listItems;
 }
 // As the last step of your lab, hook this up to index.html
 async function mainEvent() { // the async keyword means we can make API requests
