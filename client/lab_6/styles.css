@@ -98,62 +98,79 @@ body {
   font-size: 14px;
 }
 
+.legacy-form-row {
+  border: none;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+.legacy-form-row {
+  border: none;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+.legacy-form-row legend {
+  margin-bottom: 15px;
+}
+
+.legacy-form-row .radio-label {
+  display: block;
+  font-size: 14px;
+  padding: 0 20px 0 10px;
+}
+
+.legacy-form-row input[type='radio'] {
+  margin-top: 2px;
+}
+
+.legacy-form-row .radio-label,
+.legacy-form-row input[type='radio'] {
+  float: left;
+}
+
+.form-row {
+  align-items: flex-start; /* To avoid stretching */
+  margin-bottom: 10px;
+  border-radius: 25px;
+  width: 100%;
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #FFFFFF;
+  background-color: #5995DA;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #76AEED;
+}
+
+.form-row button:active {
+  background-color: #407FC7;
+}
+
+.form-row button:hover {
+  background-color: #76AEED;
+}
+
+.form-row button:active {
+  background-color: #407FC7;
+}
+
+
 @media only screen and (min-width: 700px) {
 
-  .legacy-form-row {
-    border: none;
-    margin-bottom: 40px;
-    margin-left: 20px;
-  }
 
-  .legacy-form-row legend {
-    margin-bottom: 15px;
-  }
-
-  .legacy-form-row .radio-label {
-    display: block;
-    font-size: 14px;
-    padding: 0 20px 0 10px;
-  }
-
-  .legacy-form-row input[type='radio'] {
-    margin-top: 2px;
-  }
-
-  .legacy-form-row .radio-label,
-  .legacy-form-row input[type='radio'] {
-    float: left;
-  }
-
-  .form-row {
-    align-items: flex-start; /* To avoid stretching */
-    margin-bottom: 10px;
-    border-radius: 25px;
-    width: 100%;
-    padding: 20px;
-    background-color: #FFFFFF;
-  }
-
-  .form-row button {
-    font-size: 16px;
-    font-weight: bold;
-
-    color: #FFFFFF;
-    background-color: #5995DA;
-
-    border: none;
-    border-radius: 3px;
-
-    padding: 10px 25px;
-    cursor: pointer;
-  }
-
-  .form-row button:hover {
-    background-color: #76AEED;
-  }
-
-  .form-row button:active {
-    background-color: #407FC7;
-  }
 
 }
