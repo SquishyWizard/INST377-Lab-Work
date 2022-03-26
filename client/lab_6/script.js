@@ -31,14 +31,14 @@ function createHtmlList(collection) {
 async function mainEvent() { // the async keyword means we can make API requests
   console.log('script loaded');
   const form = document.querySelector('.selection-form');
-  const submit = document.querySelector('.submit');
+  const submit = document.querySelector('.submit_button');
   submit.style.display = 'none';
   const results = await fetch('/api/foodServicesPG'); // This accesses some data from our API
   const arrayFromJson = await results.json(); // This changes it into data we can use - an object
   console.log(arrayFromJson); // this is called "dot notation"
   // arrayFromJson.data - we're accessing a key called 'data' on the returned object
   // it contains all 1,000 records we need
-  
+
   if (arrayFromJson.data.length > 0) {
     submit.style.display = 'block';
     form.addEventListener('submit', async (submitEvent) => { // async has to be declared all the way to get an await
