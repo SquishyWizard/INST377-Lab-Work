@@ -24,7 +24,7 @@ function createHtmlList(collection) {
   targetList.innerHTML = '';
   collection.forEach((item) => {
     const injectThisItem = `<li>${item.name}</li>`;
-    targetList.appendChild(injectThisItem);
+    targetList.innerHTML += injectThisItem;
   });
 }
 // As the last step of your lab, hook this up to index.html
