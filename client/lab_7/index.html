@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Casie Thomas Lab 5</title>
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+
+
+
+  <body>
+    <header class='selection-form-header'>
+      <h1>Casie Thomas Lab 5</h1>
+    </header>
+
+    <div class = "row">
+      <div class = "column">
+        <form method='get' class='selection-form'>
+          <div class='form-item'>
+            <label for='name'>Name</label>
+            <input id='name' name='name' type='text'/>
+
+            <label for='food'>Food Preference</label>
+            <input id='food' name='food' type='text'/>
+
+            <label for='zipcode'>Zipcode</label>
+            <input id='zipcode' name='zipcode' type='zipcode'/>
+          </div>
+          <fieldset class='legacy-form-row'>
+            <legend>Veggie or Vegan?</legend>
+            <input id='vegYes'
+                  name='veg'
+                  type='radio'
+                  value='isVeg' />
+            <label for='vegYes' class='radio-label'>Yes</label>
+            <input id='vegNo'
+                  name='veg'
+                  type='radio'
+                  value='notVeg'
+                  checked />
+            <label for='vegNo' class='radio-label'>No</label>
+          </fieldset>  
+            <div class='form-item' type ="submit">
+              <button class = "button submit_button" type="submit">Change Resturants</button>
+            </div> 
+        </form>
+      </div>
+      <div class = "column">
+        <div class = 'form-row'>
+          <ul class="resto-list"></ul>
+        </div>
+      </div>
+    </div>
+    <script src='script.js'></script>
+  </body>
+</html>
