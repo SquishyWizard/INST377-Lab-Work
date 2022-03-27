@@ -2,13 +2,10 @@ function getRandomIntInclusive(min, max) {
   const newMin = Math.ceil(min);
   const newMax = Math.floor(max);
   return Math.floor(
-    Math.random() * (newMax - newMin + 1) + newMin
-  );
+    Math.random() * (newMax - newMin + 1) + newMin);
 }
 
 function restoArrayMake(dataArray) {
-  // console.log('fired dataHandler');
-  // console.table(dataArray);
   const range = [...Array(15).keys()];
   const listItems = range.map((item, index) => {
     const restNum = getRandomIntInclusive(0, dataArray.length - 1);
@@ -19,10 +16,12 @@ function restoArrayMake(dataArray) {
 
 function createHtmlList(collection) {
   // console.log('fired HTML creator');
-  console.table(collection);
+  console.log(collection);
   const targetList = document.querySelector('.resto-list');
   targetList.innerHTML = '';
   collection.forEach((item) => {
+    const {name} = item;
+    const displayName = name.toLowerCase();
     const injectThisItem = `<li>${item.name}</li>`;
     targetList.innerHTML += injectThisItem;
   });
@@ -46,21 +45,33 @@ async function mainEvent() { // the async keyword means we can make API requests
   if (arrayFromJson.data.length > 0) {
     submit.style.display = 'block';
 
-    const currentArray = [];
+    let currentArray = [];
     restoName.addEventListener('input', async (event) => {
-      if (currentArray === undefined) { return; }
       console.log(event.target.value);
-      const matchResto = currentArray.filter((item) => {
-        return item.name.includes(event.target.value)
+      if (currentArray.length < 1) {
+        return;
+      }
+      const selection = currentArray.filter((item) => {
+        const nameLower = item.name.toLowerCase()
+        const valueLower = event.target.value.toLowerCase();
+        return nameLower.inclues(valueLower);
       });
-      console.log(matchResto);
+      createHtmlList(selection);
     });
-    
+
     form.addEventListener('submit', async (submitEvent) => { // async has to be declared all the way to get an await
       submitEvent.preventDefault(); // This prevents your page from refreshing!
       // console.log('form submission'); // this is substituting for a "breakpoint"
-      const restoArray = restoArrayMake(arrayFromJson.data);
-      createHtmlList(restoArray);
+      currentArray = restoArrayMake(arrayFromJson.data);
+      createHtmlList(currentArray);
+    });
+
+    zipcode.addEventListener('input', async(event) => {
+      if (currentArray.length < 1) {
+        return;
+      }
+      const zipSelection = currentArray.filter((item) => item.zip.inclues(event.target.value));
+      createHtmlList(zipSelection);
     });
   }
 }
