@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   color: #4a4a4a;
-  background-color: darkslategray; 
+  background-color: rgb(67, 165, 165); 
   font-family:  ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’,
   ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
   display: flex;
