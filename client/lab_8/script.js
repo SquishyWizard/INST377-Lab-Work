@@ -26,6 +26,18 @@ function createHtmlList(collection) {
     targetList.innerHTML += injectThisItem;
   });
 }
+
+function initMap() {
+  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'your.mapbox.access.token'
+  }).addTo(map);
+}
+
 // As the last step of your lab, hook this up to index.html
 async function mainEvent() { // the async keyword means we can make API requests
   console.log('script loaded');
